@@ -1,0 +1,252 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, black, blueviolet);
+    height:100%;
+    width: 100%;
+}
+header{
+    margin-left:700px;
+    font-size:large;
+}
+.a{
+    text-align: right;
+    text-decoration: none;
+    padding: 10px;
+    /* margin-right: 100px; */
+    color:white;
+    font-weight: bold;
+}
+.a:hover{
+    font-size: x-large;
+    transition: 0.3s;
+    text-decoration: underline wavy black;
+    padding: 2px;
+}
+.box1{
+    height:300px;
+    width:600px;
+    background-color: burlywood;
+    position: relative;
+    margin-top: 130px;
+    left: 5%;
+    border-radius: 20px;
+}
+.box2{
+    height:300px;
+    width:600px;
+    background-color: burlywood;
+    position: relative;
+    margin-top: 20px;
+    left: 25%;
+    border-radius: 20px;
+}
+.box3{
+    height:300px;
+    width:600px;
+    background-color: burlywood;
+    position: relative;
+    margin-top: -640px;
+    margin-left: 630px;
+    left: 5%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+h4{
+    font-family: monospace;
+    text-decoration: dotted;
+    font-size: xx-large;
+    color: blueviolet;
+}
+.box1-head{
+    color: forestgreen;
+    text-decoration: underline dotted blueviolet;
+    text-align: center;
+}
+span{
+    color: brown;
+}
+.box1-p{
+    font-size: xx-large;
+    font-weight: bold;
+    color: crimson;
+}
+.box3-head{
+    color: forestgreen;
+    text-decoration: underline dotted blueviolet;
+    text-align: center;
+}
+span{
+    color: brown;
+}
+.box3-p{
+    font-size: xx-large;
+    font-weight: bold;
+    color: crimson;
+}
+.box2-head{
+    color: forestgreen;
+    text-decoration: underline dotted blueviolet;
+    text-align: center;
+}
+span{
+    color: brown;
+}
+.box2-p{
+    font-size: xx-large;
+    font-weight: bold;
+    color: crimson;
+}
+h1{
+    color:white;
+    text-align: center;
+    text-decoration: dotted;
+    font-size: x-large;
+    margin-top: 20px;
+}
+h1:hover{
+    color: orange;
+    font-size: xx-large;
+    transition: 0.5s;
+}
+.box0{
+    height:4px;
+    width:52px;
+    background: linear-gradient(to right, aqua, blueviolet);
+    position: absolute;
+    left:49%;
+    transform: translateX(1%);
+}
+/* ===== Responsive Education Section ===== */
+
+.box1,
+.box2,
+.box3 {
+    width: min(600px, 85%);
+    height: auto;
+    min-height: 300px;
+    margin: 25px auto !important;
+    left: auto !important;
+    position: relative;
+    padding: 25px;
+    overflow: hidden;
+
+    /* Animation */
+    animation: cardAppear 0.8s ease both;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Different animation delay */
+.box1 {
+    animation-delay: 0.1s;
+}
+
+.box2 {
+    animation-delay: 0.3s;
+}
+
+.box3 {
+    animation-delay: 0.5s;
+}
+
+/* Hover animation */
+.box1:hover,
+.box2:hover,
+.box3:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Entry animation */
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+
+    header {
+        margin-left: 0;
+        text-align: center;
+        padding: 15px 5px;
+    }
+
+    header a {
+        display: inline-block;
+        padding: 6px 5px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 85%;
+        min-height: auto;
+        margin: 25px auto !important;
+        padding: 20px;
+    }
+
+    .box1-head,
+    .box2-head,
+    .box3-head {
+        font-size: 22px;
+    }
+
+    .box1-p,
+    .box2-p,
+    .box3-p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+}
+
+/* ===== Small Mobile ===== */
+
+@media (max-width: 480px) {
+
+    header a {
+        font-size: 12px;
+        padding: 5px 3px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        width: 82%;
+        padding: 15px;
+    }
+
+    .box1-head,
+    .box2-head,
+    .box3-head {
+        font-size: 19px;
+    }
+
+    .box1-p,
+    .box2-p,
+    .box3-p {
+        font-size: 16px;
+    }
+}

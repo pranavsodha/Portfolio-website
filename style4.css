@@ -1,0 +1,542 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, black, blueviolet);
+    height:100%;
+    width: 100%;
+}
+header{
+    margin-left:700px;
+    font-size:large;
+}
+.a{
+    text-align: right;
+    text-decoration: none;
+    padding: 10px;
+    /* margin-right: 100px; */
+    color:white;
+    font-weight: bold;
+}
+.a:hover{
+    font-size: x-large;
+    transition: 0.3s;
+    text-decoration: underline wavy black;
+    padding: 2px;
+}
+.box1{
+    height: 300px;
+    width: 500px;
+    background-color: darksalmon;
+    position: relative;
+    left:10%;
+    margin-top:100px;
+    border: 3px dotted red;
+    border-radius: 20px;
+}
+.img1{
+    height: 290px;
+    width: 485px;
+    margin:3px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.img1:hover{
+    height:320px;
+    width:500px;
+    transition: 0.5s;
+}
+.box1:hover{
+    height:330px;
+    width:515px;
+    transition: 0.5s;
+}
+.box2{
+    height: 300px;
+    width: 500px;
+    background-color: darksalmon;
+    position: absolute;
+    left:50%;
+    margin-top:-300px;
+    border: 3px dotted red;
+    border-radius: 20px;
+}
+.img2{
+    height: 290px;
+    width: 485px;
+    margin:3px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.img2:hover{
+    height:320px;
+    width:500px;
+    transition: 0.5s;
+}
+.box2:hover{
+    height:330px;
+    width:515px;
+    transition: 0.5s;
+}
+.box3{
+    height: 300px;
+    width: 500px;
+    background-color: darksalmon;
+    position: absolute;
+    left:10%;
+    margin-top:15px;
+    border: 3px dotted red;
+    border-radius: 20px;
+}
+.img3{
+    height: 290px;
+    width: 485px;
+    margin:3px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.img3:hover{
+    height:320px;
+    width:500px;
+    transition: 0.5s;
+}
+.box3:hover{
+    height:330px;
+    width:515px;
+    transition: 0.5s;
+}
+.box4{
+    height: 300px;
+    width: 500px;
+    background-color: darksalmon;
+    position: absolute;
+    left:50%;
+    margin-top:10px;
+    border: 3px dotted red;
+    border-radius: 20px;
+}
+.img4{
+    height: 290px;
+    width: 485px;
+    margin:3px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.img4:hover{
+    height:320px;
+    width:500px;
+    transition: 0.5s;
+}
+.box4:hover{
+    height:330px;
+    width:515px;
+    transition: 0.5s;
+}
+h1{
+    text-align: center;
+    font-size: x-large;
+    color: aqua;
+    margin-top: 30px;
+}
+h1:hover{
+    font-size: xx-large;
+    color: orange;
+    transition: 0.5s;
+}
+.box0{
+    height:4px;
+    width:52px;
+    background: linear-gradient(to right, aqua, blueviolet);
+    position: absolute;
+    left:49%;
+    transform: translateX(1%);
+}
+/* =====================================================
+   FINAL RESPONSIVE FIX
+   Paste this at the VERY END of style4.css
+   ===================================================== */
+
+/* ---------- PAGE ---------- */
+
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-height: 100% !important;
+    overflow-x: hidden !important;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+header {
+    width: 100% !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+
+    gap: 5px !important;
+    padding: 15px 10px !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+}
+
+
+/* ---------- NAV LINKS ---------- */
+
+.a {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 8px 10px !important;
+}
+
+
+/* ---------- HEADING ---------- */
+
+h1 {
+    width: 100% !important;
+    text-align: center !important;
+
+    margin: 30px 0 !important;
+    padding: 0 10px !important;
+}
+
+
+/* =====================================================
+   IMPORTANT:
+   REMOVE ALL ABSOLUTE POSITIONING FROM BOXES
+   ===================================================== */
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    position: relative !important;
+
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+
+    width: min(500px, 92vw) !important;
+    height: auto !important;
+    min-height: 300px !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    padding: 5px !important;
+
+    transform: none;
+}
+
+
+/* =====================================================
+   REMOVE OLD NEGATIVE POSITIONING
+   ===================================================== */
+
+.box2,
+.box3,
+.box4 {
+    margin-top: 30px !important;
+}
+
+
+/* ---------- IMAGES ---------- */
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 485px !important;
+
+    height: auto !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+
+    object-fit: contain !important;
+
+    border-radius: 20px !important;
+}
+
+
+/* =====================================================
+   CERTIFICATE ANIMATION
+   ===================================================== */
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    animation: certificateAppear 0.8s ease both !important;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease !important;
+}
+
+.box1 {
+    animation-delay: 0.1s !important;
+}
+
+.box2 {
+    animation-delay: 0.25s !important;
+}
+
+.box3 {
+    animation-delay: 0.4s !important;
+}
+
+.box4 {
+    animation-delay: 0.55s !important;
+}
+
+
+/* ---------- HOVER ---------- */
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+    transform: translateY(-8px) !important;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.35) !important;
+}
+
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    transition:
+        transform 0.45s ease,
+        filter 0.45s ease !important;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover {
+    transform: scale(1.025) !important;
+    filter: brightness(1.08) !important;
+}
+
+
+/* ---------- ANIMATION ---------- */
+
+@keyframes certificateAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 12px 5px !important;
+    }
+
+    .a {
+        font-size: 15px !important;
+        padding: 7px 6px !important;
+    }
+
+    h1 {
+        font-size: 32px !important;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        width: 90vw !important;
+        max-width: 500px !important;
+        min-height: auto !important;
+    }
+
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+
+    /* Navbar */
+
+    header {
+        width: 100% !important;
+
+        margin: 0 !important;
+        padding: 10px 3px !important;
+
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+
+        gap: 0 !important;
+    }
+
+
+    .a {
+        font-size: 12px !important;
+
+        padding: 7px 5px !important;
+
+        margin: 0 !important;
+    }
+
+
+    /* Heading */
+
+    h1 {
+        font-size: 26px !important;
+
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+
+        text-align: center !important;
+    }
+
+
+    /* Cards */
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+
+        position: relative !important;
+
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+
+        width: 94vw !important;
+        max-width: 500px !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        margin: 20px auto !important;
+
+        padding: 4px !important;
+
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        border-radius: 15px !important;
+    }
+
+
+    /* Images */
+
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        height: auto !important;
+
+        max-height: none !important;
+
+        margin: 0 !important;
+
+        display: block !important;
+
+        object-fit: contain !important;
+
+        border-radius: 14px !important;
+    }
+
+
+    /* Mobile hover */
+
+    .box1:hover,
+    .box2:hover,
+    .box3:hover,
+    .box4:hover {
+        transform: translateY(-5px) !important;
+    }
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+   ===================================================== */
+
+@media (max-width: 400px) {
+
+    .a {
+        font-size: 11px !important;
+        padding: 6px 4px !important;
+    }
+
+    h1 {
+        font-size: 23px !important;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        width: 96vw !important;
+        margin: 15px auto !important;
+    }
+}

@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, black, blueviolet);
+    height:100%;
+    width: 100%;
+}
+header{
+    margin-left:700px;
+    font-size:large;
+}
+.a{
+    text-align: right;
+    text-decoration: none;
+    padding: 10px;
+    /* margin-right: 100px; */
+    color:white;
+    font-weight: bold;
+}
+.a:hover{
+    font-size: x-large;
+    transition: 0.3s;
+    text-decoration: underline wavy black;
+    padding: 2px;
+}
+h1{
+    text-align: center;
+    font-size: x-large;
+    color: aqua;
+    margin-top: 30px;
+}
+h1:hover{
+    font-size: xx-large;
+    transition: 0.5s;
+    color: orange;
+}
+p{
+    font-family:"Playwrite AU VIC Guides", cursive;
+    text-align: center;
+    color:pink;
+    margin-top: 30px;
+    font-size: xx-large;
+}
+.box1{
+    position: relative;
+    height:200px;
+    width:600px;
+    background-color: chartreuse;
+    left:30%;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+img{
+    height:100px;
+    width: 100px;
+    position: relative;
+    left:5%;
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+    color: brown;
+}
